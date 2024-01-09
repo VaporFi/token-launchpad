@@ -1,13 +1,22 @@
-# Sample Hardhat Project
+# MemeFactory Contracts
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project allows you to deploy memecoin tokens in a secure way. With a single transaction you can:
 
-Try running some of the following tasks:
+1. Deploy an ERC20 token.
+2. Create the Liquidity Pool on VaporDEX.
+3. Lock the LP tokens.
+4. Renounce the ownership of the memecoin contract.
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
-```
+## How to use it
+
+Install the dependencies
+
+`npm install`
+
+Compile the contracts
+
+`npx hardhat compile`
+
+Deploy the contracts
+
+`npx hardhat deploy --network localhost`
